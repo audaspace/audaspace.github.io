@@ -1,0 +1,4 @@
+*.md5
+*.map
+objects.inv
+.buildinfo

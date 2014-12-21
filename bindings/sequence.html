@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sequence &mdash; audaspace 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="audaspace 1.0 documentation" href="index.html" />
+    <link rel="next" title="Sequence Entry" href="sequence_entry.html" />
+    <link rel="prev" title="Handle" href="handle.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sequence_entry.html" title="Sequence Entry"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="handle.html" title="Handle"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">audaspace 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sequence">
+<h1>Sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="aud.Sequence">
+<em class="property">class </em><tt class="descclassname">aud.</tt><tt class="descname">Sequence</tt><a class="headerlink" href="#aud.Sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>This sound represents sequenced entries to play a sound scene.</p>
+<dl class="method">
+<dt id="aud.Sequence.add">
+<tt class="descname">add</tt><big>(</big><big>)</big><a class="headerlink" href="#aud.Sequence.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new entry to the scene.
+:arg sound: The sound this entry should play.
+:type sound: <a class="reference internal" href="sound.html#aud.Sound" title="aud.Sound"><tt class="xref py py-class docutils literal"><span class="pre">Sound</span></tt></a>
+:arg begin: The start time.
+:type begin: float
+:arg end: The end time or a negative value if determined by the sound.
+:type end: float
+:arg skip: How much seconds should be skipped at the beginning.
+:type skip: float
+:return: The entry added.
+:rtype: <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><tt class="xref py py-class docutils literal"><span class="pre">SequenceEntry</span></tt></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.channels">
+<tt class="descname">channels</tt><a class="headerlink" href="#aud.Sequence.channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>The channel count of the sequence.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.distance_model">
+<tt class="descname">distance_model</tt><a class="headerlink" href="#aud.Sequence.distance_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>The distance model of the sequence.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference external" href="http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.htm#_Toc199835864">http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.htm#_Toc199835864</a></p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.doppler_factor">
+<tt class="descname">doppler_factor</tt><a class="headerlink" href="#aud.Sequence.doppler_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The doppler factor of the sequence.
+This factor is a scaling factor for the velocity vectors in doppler calculation. So a value bigger than 1 will exaggerate the effect as it raises the velocity.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.fps">
+<tt class="descname">fps</tt><a class="headerlink" href="#aud.Sequence.fps" title="Permalink to this definition">¶</a></dt>
+<dd><p>The listeners&#8217;s location in 3D space, a 3D tuple of floats.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.muted">
+<tt class="descname">muted</tt><a class="headerlink" href="#aud.Sequence.muted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the whole sequence is muted.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.rate">
+<tt class="descname">rate</tt><a class="headerlink" href="#aud.Sequence.rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sampling rate of the sequence in Hz.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sequence.remove">
+<tt class="descname">remove</tt><big>(</big><big>)</big><a class="headerlink" href="#aud.Sequence.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>reomve()</p>
+<p>Adds a new entry to the scene.
+:arg entry: The entry to remove.
+:type entry: <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><tt class="xref py py-class docutils literal"><span class="pre">SequenceEntry</span></tt></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sequence.setAnimationData">
+<tt class="descname">setAnimationData</tt><big>(</big><big>)</big><a class="headerlink" href="#aud.Sequence.setAnimationData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes animation data to a sequence.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type</strong> (<em>int</em>) &#8211; The type of animation data.</li>
+<li><strong>frame</strong> (<em>int</em>) &#8211; The frame this data is for.</li>
+<li><strong>data</strong> (<em>sequence of float</em>) &#8211; The data to write.</li>
+<li><strong>animated</strong> (<em>bool</em>) &#8211; Whether the attribute is animated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sequence.speed_of_sound">
+<tt class="descname">speed_of_sound</tt><a class="headerlink" href="#aud.Sequence.speed_of_sound" title="Permalink to this definition">¶</a></dt>
+<dd><p>The speed of sound of the sequence.
+The speed of sound in air is typically 343 m/s.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="handle.html"
+                        title="previous chapter">Handle</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sequence_entry.html"
+                        title="next chapter">Sequence Entry</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sequence.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="sequence_entry.html" title="Sequence Entry"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="handle.html" title="Handle"
+             >previous</a> |</li>
+        <li><a href="index.html">audaspace 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jörg Müller.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
