@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data_5ft',['data_t',['../Audaspace_8h.html#ae91c9d70e1e2c8b657e51de1fff60ada',1,'Audaspace.h']]],
   ['defaultsamplerate',['DefaultSampleRate',['../Specification_8h.html#a17379dce26833610bba016391ef06e3e',1,'Specification.h']]],
   ['defaultsynchronizer',['DefaultSynchronizer',['../classDefaultSynchronizer.html',1,'']]],
   ['defaultsynchronizer_2eh',['DefaultSynchronizer.h',['../DefaultSynchronizer_8h.html',1,'']]],
@@ -16,7 +15,7 @@ var searchData=
   ['devicespecs',['DeviceSpecs',['../structDeviceSpecs.html',1,'']]],
   ['distancemodel',['DistanceModel',['../I3DDevice_8h.html#a5e42e9a2b2a31997de7556c983d15ffd',1,'I3DDevice.h']]],
   ['doesplayback',['doesPlayback',['../classJackDevice.html#a8fc596768a740c2f1c14dbdb502c420e',1,'JackDevice']]],
-  ['dofilteriir',['doFilterIIR',['../CallbackIIRFilterReader_8h.html#a7d7c4e1ff6db3a40374a107fa41af544',1,'CallbackIIRFilterReader.h']]],
+  ['dofilteriir',['doFilterIIR',['../CallbackIIRFilterReader_8h.html#a1547112fb751881de316b45c1ed12414',1,'CallbackIIRFilterReader.h']]],
   ['double',['Double',['../classDouble.html',1,'Double'],['../classDouble.html#acdc247c27d3a4d62be10d507a559c3ce',1,'Double::Double()']]],
   ['double_2eh',['Double.h',['../Double_8h.html',1,'']]],
   ['doublereader',['DoubleReader',['../classDoubleReader.html',1,'DoubleReader'],['../classDoubleReader.html#a10eba1e6dd89236951a63451acd5a810',1,'DoubleReader::DoubleReader()']]],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sample_5ft',['sample_t',['../Audaspace_8h.html#aa0798f7ea0975b143a1d9deac8c05d43',1,'Audaspace.h']]],
   ['sampleformat',['SampleFormat',['../Specification_8h.html#ae39c36a097f22514400136509407dad2',1,'Specification.h']]],
   ['samplerate',['SampleRate',['../Specification_8h.html#a11249ca544d179e7fa61b2200a092407',1,'Specification.h']]],
   ['sampleratechanged',['sampleRateChanged',['../classBaseIIRFilterReader.html#abc6e8235a8ac90e9abd6a42102a65123',1,'BaseIIRFilterReader::sampleRateChanged()'],['../classDynamicIIRFilterReader.html#a93375b5b9c832add9a25cab41179ef94',1,'DynamicIIRFilterReader::sampleRateChanged()']]],
@@ -97,7 +96,7 @@ var searchData=
   ['status_5fstopped',['STATUS_STOPPED',['../IHandle_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba331a22c9674afd68e8de27851c174efa',1,'IHandle.h']]],
   ['stop',['stop',['../classDefaultSynchronizer.html#a35ab8080e5aaa145c274b12db6d0964d',1,'DefaultSynchronizer::stop()'],['../classIHandle.html#a6baaee5885c8aa04e56172f3bb43728b',1,'IHandle::stop()'],['../classISynchronizer.html#a17c16f264af2f533758cde8a46778ac1',1,'ISynchronizer::stop()'],['../classSoftwareDevice_1_1SoftwareHandle.html#a4e36609e5e56bf4922a8fe2aff306f95',1,'SoftwareDevice::SoftwareHandle::stop()'],['../classJackSynchronizer.html#a9fa784ab6c54aa504b7ab0992020a59e',1,'JackSynchronizer::stop()']]],
   ['stopall',['stopAll',['../classIDevice.html#a9b6e5f0f1dc269117d1b27230b927b8a',1,'IDevice::stopAll()'],['../classNULLDevice.html#a812274ed0938ba2b3deba1be4eb8acc4',1,'NULLDevice::stopAll()'],['../classSoftwareDevice.html#af38ef1dd52d08d4c2fd34dfaa458ffb7',1,'SoftwareDevice::stopAll()'],['../classOpenALDevice.html#aba21c2393451fc2c49389c74b7bba0df',1,'OpenALDevice::stopAll()']]],
-  ['stopcallback',['stopCallback',['../IHandle_8h.html#a0986bf22c8d168e6edb4ac172a9d70d6',1,'IHandle.h']]],
+  ['stopcallback',['stopCallback',['../IHandle_8h.html#ad7147ffa399f8915e95b9e2eb94ca6e5',1,'IHandle.h']]],
   ['stopplayback',['stopPlayback',['../classJackDevice.html#a0c7bdd9f8d41412c454926b3924927ee',1,'JackDevice']]],
   ['streambuffer',['StreamBuffer',['../classStreamBuffer.html',1,'StreamBuffer'],['../classStreamBuffer.html#a34e621eaa9216e34db4c0020836fabe2',1,'StreamBuffer::StreamBuffer()']]],
   ['streambuffer_2eh',['StreamBuffer.h',['../StreamBuffer_8h.html',1,'']]],
@@ -107,5 +106,5 @@ var searchData=
   ['superpose_2eh',['Superpose.h',['../Superpose_8h.html',1,'']]],
   ['superposereader',['SuperposeReader',['../classSuperposeReader.html',1,'SuperposeReader'],['../classSuperposeReader.html#af1d89247e184a3dd12a86cf67d7630ce',1,'SuperposeReader::SuperposeReader()']]],
   ['superposereader_2eh',['SuperposeReader.h',['../SuperposeReader_8h.html',1,'']]],
-  ['syncfunction',['syncFunction',['../classISynchronizer.html#a8cfaa0f58557ded19eb4e0dff3b7d00b',1,'ISynchronizer']]]
+  ['syncfunction',['syncFunction',['../classISynchronizer.html#a055d3b6aeda93fd20f87b2ff08c5fa04',1,'ISynchronizer']]]
 ];
