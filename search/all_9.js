@@ -6,6 +6,6 @@ var searchData=
   ['jacksynchronizer_2eh',['JackSynchronizer.h',['../JackSynchronizer_8h.html',1,'']]],
   ['josresample',['JOSResample',['../classJOSResample.html',1,'JOSResample'],['../classJOSResample.html#ae26e3108ef880e0fe53068b34f3c9cab',1,'JOSResample::JOSResample()']]],
   ['josresample_2eh',['JOSResample.h',['../JOSResample_8h.html',1,'']]],
-  ['josresamplereader',['JOSResampleReader',['../classJOSResampleReader.html',1,'JOSResampleReader'],['../classJOSResampleReader.html#aa1c7ac079521d851cd9036cc911146f6',1,'JOSResampleReader::JOSResampleReader()']]],
+  ['josresamplereader',['JOSResampleReader',['../classJOSResampleReader.html',1,'JOSResampleReader'],['../classJOSResampleReader.html#ac9c48a102469672a516a97476b7f8330',1,'JOSResampleReader::JOSResampleReader()']]],
   ['josresamplereader_2eh',['JOSResampleReader.h',['../JOSResampleReader_8h.html',1,'']]]
 ];

@@ -6,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Sound &mdash; audaspace 1.0 documentation</title>
+    <title>Sound &mdash; audaspace 1.1 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.0',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,29 +23,15 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="audaspace 1.0 documentation" href="index.html" />
+    <link rel="top" title="audaspace 1.1 documentation" href="index.html" />
     <link rel="next" title="Handle" href="handle.html" />
-    <link rel="prev" title="Device" href="device.html" /> 
+    <link rel="prev" title="Device" href="device.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="handle.html" title="Handle"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="device.html" title="Device"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">audaspace 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body role="document">  
 
     <div class="document">
       <div class="documentwrapper">
@@ -103,6 +89,30 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="aud.Sound.buffer">
+<code class="descname">buffer</code><span class="sig-paren">(</span><em>data</em>, <em>rate</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a sound from a data buffer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<em>numpy.ndarray</em>) &#8211; The data as two dimensional numpy array.</li>
+<li><strong>rate</strong> (<em>double</em>) &#8211; The sample rate.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="aud.Sound.cache">
 <code class="descname">cache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.cache" title="Permalink to this definition">¶</a></dt>
 <dd><p>Caches a sound into RAM.
@@ -124,6 +134,26 @@ This saves CPU usage needed for decoding and file access if the underlying sound
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Raw PCM data needs a lot of space, only buffer short factories.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sound.data">
+<code class="descname">data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the data of the sound as numpy array.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A two dimensional numpy float array.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Best efficiency with cached sounds.</p>
 </div>
 </dd></dl>
 
@@ -322,6 +352,12 @@ If the first value of the a sequence is neither 0 nor 1, all filter coefficients
 </div>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="aud.Sound.length">
+<code class="descname">length</code><a class="headerlink" href="#aud.Sound.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sample specification of the sound as a tuple with rate and channel count.</p>
+</dd></dl>
+
 <dl class="method">
 <dt id="aud.Sound.limit">
 <code class="descname">limit</code><span class="sig-paren">(</span><em>start</em>, <em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.limit" title="Permalink to this definition">¶</a></dt>
@@ -476,6 +512,30 @@ This is like joining a sound with its reverse.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="aud.Sound.resample">
+<code class="descname">resample</code><span class="sig-paren">(</span><em>rate</em>, <em>high_quality</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.resample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resamples the sound.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rate</strong> (<em>double</em>) &#8211; The new sample rate.</li>
+<li><strong>high_quality</strong> (<em>bool</em>) &#8211; When true use a higher quality but slower resampler.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="aud.Sound.reverse">
 <code class="descname">reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.reverse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plays a sound reversed.</p>
@@ -561,6 +621,12 @@ This is like joining a sound with its reverse.</p>
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="aud.Sound.specs">
+<code class="descname">specs</code><a class="headerlink" href="#aud.Sound.specs" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sample specification of the sound as a tuple with rate and channel count.</p>
 </dd></dl>
 
 <dl class="method">
@@ -671,6 +737,30 @@ This is like joining a sound with its reverse.</p>
 </div>
 </dd></dl>
 
+<dl class="method">
+<dt id="aud.Sound.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>filename</em>, <em>rate</em>, <em>channels</em>, <em>format</em>, <em>container</em>, <em>codec</em>, <em>bitrate</em>, <em>buffersize</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the sound to a file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> (<em>string</em>) &#8211; The path to write to.</li>
+<li><strong>rate</strong> (<em>int</em>) &#8211; The sample rate to write with.</li>
+<li><strong>channels</strong> (<em>int</em>) &#8211; The number of channels to write with.</li>
+<li><strong>format</strong> (<em>int</em>) &#8211; The sample format to write with.</li>
+<li><strong>container</strong> (<em>int</em>) &#8211; The container format for the file.</li>
+<li><strong>codec</strong> (<em>int</em>) &#8211; The codec to use in the file.</li>
+<li><strong>bitrate</strong> (<em>int</em>) &#8211; The bitrate to write with.</li>
+<li><strong>buffersize</strong> (<em>int</em>) &#8211; The size of the writing buffer.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -680,13 +770,15 @@ This is like joining a sound with its reverse.</p>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="device.html"
-                        title="previous chapter">Device</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="handle.html"
-                        title="next chapter">Handle</a></p>
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="device.html" title="previous chapter">Device</a></li>
+      <li>Next: <a href="handle.html" title="next chapter">Handle</a></li>
+  </ul></li>
+</ul>
+</div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -711,27 +803,20 @@ This is like joining a sound with its reverse.</p>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="handle.html" title="Handle"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="device.html" title="Device"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">audaspace 1.0 documentation</a> &raquo;</li> 
-      </ul>
+    <div class="footer">
+      &copy;2009-2015, Jörg Müller.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/sound.txt"
+          rel="nofollow">Page source</a>
     </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2009-2015, Jörg Müller.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+
+    
+
+    
   </body>
 </html>

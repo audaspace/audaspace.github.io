@@ -98,7 +98,7 @@ var searchData=
   ['stopall',['stopAll',['../classIDevice.html#a9b6e5f0f1dc269117d1b27230b927b8a',1,'IDevice::stopAll()'],['../classNULLDevice.html#a812274ed0938ba2b3deba1be4eb8acc4',1,'NULLDevice::stopAll()'],['../classSoftwareDevice.html#af38ef1dd52d08d4c2fd34dfaa458ffb7',1,'SoftwareDevice::stopAll()'],['../classOpenALDevice.html#aba21c2393451fc2c49389c74b7bba0df',1,'OpenALDevice::stopAll()']]],
   ['stopcallback',['stopCallback',['../IHandle_8h.html#ad7147ffa399f8915e95b9e2eb94ca6e5',1,'IHandle.h']]],
   ['stopplayback',['stopPlayback',['../classJackDevice.html#a0c7bdd9f8d41412c454926b3924927ee',1,'JackDevice']]],
-  ['streambuffer',['StreamBuffer',['../classStreamBuffer.html',1,'StreamBuffer'],['../classStreamBuffer.html#a34e621eaa9216e34db4c0020836fabe2',1,'StreamBuffer::StreamBuffer()']]],
+  ['streambuffer',['StreamBuffer',['../classStreamBuffer.html',1,'StreamBuffer'],['../classStreamBuffer.html#a34e621eaa9216e34db4c0020836fabe2',1,'StreamBuffer::StreamBuffer(std::shared_ptr&lt; ISound &gt; sound)'],['../classStreamBuffer.html#a8e2b5a4a40bd7de7dbfca636990a36a9',1,'StreamBuffer::StreamBuffer(std::shared_ptr&lt; Buffer &gt; buffer, Specs specs)']]],
   ['streambuffer_2eh',['StreamBuffer.h',['../StreamBuffer_8h.html',1,'']]],
   ['sum',['Sum',['../classSum.html',1,'Sum'],['../classSum.html#a039c4a659e2831c4665702ead33b549b',1,'Sum::Sum()']]],
   ['sum_2eh',['Sum.h',['../Sum_8h.html',1,'']]],
