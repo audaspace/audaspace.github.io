@@ -11,6 +11,11 @@ var searchData=
   ['ffmpegreader_2eh',['FFMPEGReader.h',['../FFMPEGReader_8h.html',1,'']]],
   ['ffmpegwriter',['FFMPEGWriter',['../classFFMPEGWriter.html',1,'FFMPEGWriter'],['../classFFMPEGWriter.html#a2ff19672299a9be07e0a61ed8d788063',1,'FFMPEGWriter::FFMPEGWriter()']]],
   ['ffmpegwriter_2eh',['FFMPEGWriter.h',['../FFMPEGWriter_8h.html',1,'']]],
+  ['fft',['FFT',['../classFFTPlan.html#a795d16974d3ba4556ac4e9eaca4b4a37',1,'FFTPlan']]],
+  ['fftconvolver',['FFTConvolver',['../classFFTConvolver.html',1,'FFTConvolver'],['../classFFTConvolver.html#a41e03472da4d29ebf8bce3be6e796b16',1,'FFTConvolver::FFTConvolver()']]],
+  ['fftconvolver_2eh',['FFTConvolver.h',['../FFTConvolver_8h.html',1,'']]],
+  ['fftplan',['FFTPlan',['../classFFTPlan.html',1,'FFTPlan'],['../classFFTPlan.html#af8ca7ead6119f929384dba50deed8101',1,'FFTPlan::FFTPlan(double measureTime=0)'],['../classFFTPlan.html#a8a546396172e855f6abe2852558dd7aa',1,'FFTPlan::FFTPlan(int n, double measureTime=0)']]],
+  ['fftplan_2eh',['FFTPlan.h',['../FFTPlan_8h.html',1,'']]],
   ['file',['File',['../classFile.html',1,'File'],['../classFile.html#abd2dacf27133c9d5595ecc414299f1a3',1,'File::File(std::string filename)'],['../classFile.html#aa6c41aba3bc4e60a4d4041067133bbc7',1,'File::File(const data_t *buffer, int size)'],['../group__file.html',1,'(Global Namespace)']]],
   ['file_2eh',['File.h',['../File_8h.html',1,'']]],
   ['fileexception',['FileException',['../classFileException.html',1,'FileException'],['../classFileException.html#ab53ff635779f81b524b48b9d8342541a',1,'FileException::FileException(std::string message, std::string file, int line)'],['../classFileException.html#a576e4c7dc0f54724656927f359b68e82',1,'FileException::FileException(const FileException &amp;exception)']]],
@@ -25,5 +30,6 @@ var searchData=
   ['format_5fs16',['FORMAT_S16',['../Specification_8h.html#ae39c36a097f22514400136509407dad2aa8863da84826f4605a38ac4a0a9f73d5',1,'Specification.h']]],
   ['format_5fs24',['FORMAT_S24',['../Specification_8h.html#ae39c36a097f22514400136509407dad2a8cd1f7d4e788713dfd3d4c0ab2524bfc',1,'Specification.h']]],
   ['format_5fs32',['FORMAT_S32',['../Specification_8h.html#ae39c36a097f22514400136509407dad2a8337fd38b7849d0621f5282103357482',1,'Specification.h']]],
-  ['format_5fu8',['FORMAT_U8',['../Specification_8h.html#ae39c36a097f22514400136509407dad2a5375c8a581afcfaba1d126f854df0636',1,'Specification.h']]]
+  ['format_5fu8',['FORMAT_U8',['../Specification_8h.html#ae39c36a097f22514400136509407dad2a5375c8a581afcfaba1d126f854df0636',1,'Specification.h']]],
+  ['freebuffer',['freeBuffer',['../classFFTPlan.html#aa10f7a78469ec8688441f593096e6b16',1,'FFTPlan']]]
 ];

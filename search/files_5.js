@@ -5,6 +5,8 @@ var searchData=
   ['ffmpeg_2eh',['FFMPEG.h',['../FFMPEG_8h.html',1,'']]],
   ['ffmpegreader_2eh',['FFMPEGReader.h',['../FFMPEGReader_8h.html',1,'']]],
   ['ffmpegwriter_2eh',['FFMPEGWriter.h',['../FFMPEGWriter_8h.html',1,'']]],
+  ['fftconvolver_2eh',['FFTConvolver.h',['../FFTConvolver_8h.html',1,'']]],
+  ['fftplan_2eh',['FFTPlan.h',['../FFTPlan_8h.html',1,'']]],
   ['file_2eh',['File.h',['../File_8h.html',1,'']]],
   ['filemanager_2eh',['FileManager.h',['../FileManager_8h.html',1,'']]],
   ['filewriter_2eh',['FileWriter.h',['../FileWriter_8h.html',1,'']]]

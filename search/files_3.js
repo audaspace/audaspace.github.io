@@ -7,5 +7,6 @@ var searchData=
   ['double_2eh',['Double.h',['../Double_8h.html',1,'']]],
   ['doublereader_2eh',['DoubleReader.h',['../DoubleReader_8h.html',1,'']]],
   ['dynamiciirfilter_2eh',['DynamicIIRFilter.h',['../DynamicIIRFilter_8h.html',1,'']]],
-  ['dynamiciirfilterreader_2eh',['DynamicIIRFilterReader.h',['../DynamicIIRFilterReader_8h.html',1,'']]]
+  ['dynamiciirfilterreader_2eh',['DynamicIIRFilterReader.h',['../DynamicIIRFilterReader_8h.html',1,'']]],
+  ['dynamicmusic_2eh',['DynamicMusic.h',['../DynamicMusic_8h.html',1,'']]]
 ];

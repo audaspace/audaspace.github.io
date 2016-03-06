@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Sound &mdash; audaspace 1.1 documentation</title>
+    <title>Sound &mdash; audaspace 1.2 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1',
+        VERSION:     '1.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,12 +23,12 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="audaspace 1.1 documentation" href="index.html" />
+    <link rel="top" title="audaspace 1.2 documentation" href="index.html" />
     <link rel="next" title="Handle" href="handle.html" />
     <link rel="prev" title="Device" href="device.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
   <body role="document">  
@@ -89,6 +89,50 @@
 </dd></dl>
 
 <dl class="method">
+<dt id="aud.Sound.addSound">
+<code class="descname">addSound</code><span class="sig-paren">(</span><em>sound</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.addSound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new sound to a sound list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sound</strong> (<a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a>) &#8211; The sound that will be added to the list.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can only add a sound to a sound list.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sound.binaural">
+<code class="descname">binaural</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.binaural" title="Permalink to this definition">¶</a></dt>
+<dd><p>convolver()</p>
+<p>Creates a binaural sound using another sound as source. The original sound must be mono</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>hrtfs</strong> &#8211; An HRTF set.</li>
+<li><strong>source</strong> (<code class="xref py py-class docutils literal"><span class="pre">Source</span></code>) &#8211; An object representing the source position of the sound.</li>
+<li><strong>threadPool</strong> (<code class="xref py py-class docutils literal"><span class="pre">ThreadPool</span></code>) &#8211; A thread pool used to parallelize convolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="aud.Sound.buffer">
 <code class="descname">buffer</code><span class="sig-paren">(</span><em>data</em>, <em>rate</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.buffer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a sound from a data buffer.</p>
@@ -135,6 +179,30 @@ This saves CPU usage needed for decoding and file access if the underlying sound
 <p class="first admonition-title">Warning</p>
 <p class="last">Raw PCM data needs a lot of space, only buffer short factories.</p>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sound.convolver">
+<code class="descname">convolver</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.convolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a sound that will apply convolution to another sound.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>impulseResponse</strong> (<code class="xref py py-class docutils literal"><span class="pre">ImpulseResponse</span></code>) &#8211; The filter with which convolve the sound.</li>
+<li><strong>threadPool</strong> (<code class="xref py py-class docutils literal"><span class="pre">ThreadPool</span></code>) &#8211; A thread pool used to parallelize convolution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -383,6 +451,24 @@ If the first value of the a sequence is neither 0 nor 1, all filter coefficients
 </dd></dl>
 
 <dl class="method">
+<dt id="aud.Sound.list">
+<code class="descname">list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an empty sound list that can contain several sounds.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>random</strong> (<em>int</em>) &#8211; wether the playback will be random or not.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
 <dt id="aud.Sound.loop">
 <code class="descname">loop</code><span class="sig-paren">(</span><em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.loop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loops a sound.</p>
@@ -448,6 +534,23 @@ If the first value of the a sequence is neither 0 nor 1, all filter coefficients
 <p class="first admonition-title">Note</p>
 <p class="last">The two factories have to have the same specifications (channels and samplerate).</p>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="aud.Sound.mutable">
+<code class="descname">mutable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.mutable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a sound that will be restarted when sought backwards.
+If the original sound is a sound list, the playing sound can change.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The created <a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a> object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -561,7 +664,7 @@ This is like joining a sound with its reverse.</p>
 
 <dl class="method">
 <dt id="aud.Sound.sawtooth">
-<code class="descname">sawtooth</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=44100</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.sawtooth" title="Permalink to this definition">¶</a></dt>
+<code class="descname">sawtooth</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=48000</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.sawtooth" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a sawtooth sound which plays a sawtooth wave.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -601,7 +704,7 @@ This is like joining a sound with its reverse.</p>
 
 <dl class="method">
 <dt id="aud.Sound.sine">
-<code class="descname">sine</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=44100</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.sine" title="Permalink to this definition">¶</a></dt>
+<code class="descname">sine</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=48000</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.sine" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a sine sound which plays a sine wave.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -631,7 +734,7 @@ This is like joining a sound with its reverse.</p>
 
 <dl class="method">
 <dt id="aud.Sound.square">
-<code class="descname">square</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=44100</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.square" title="Permalink to this definition">¶</a></dt>
+<code class="descname">square</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=48000</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.square" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a square sound which plays a square wave.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -689,7 +792,7 @@ This is like joining a sound with its reverse.</p>
 
 <dl class="method">
 <dt id="aud.Sound.triangle">
-<code class="descname">triangle</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=44100</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.triangle" title="Permalink to this definition">¶</a></dt>
+<code class="descname">triangle</code><span class="sig-paren">(</span><em>frequency</em>, <em>rate=48000</em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.triangle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a triangle sound which plays a triangle wave.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -807,8 +910,8 @@ This is like joining a sound with its reverse.</p>
       &copy;2009-2015, Jörg Müller.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="_sources/sound.txt"

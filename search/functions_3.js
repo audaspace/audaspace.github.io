@@ -8,5 +8,6 @@ var searchData=
   ['double',['Double',['../classDouble.html#acdc247c27d3a4d62be10d507a559c3ce',1,'Double']]],
   ['doublereader',['DoubleReader',['../classDoubleReader.html#a10eba1e6dd89236951a63451acd5a810',1,'DoubleReader']]],
   ['dynamiciirfilter',['DynamicIIRFilter',['../classDynamicIIRFilter.html#ac26174a5d30d97b49b3fd5d5eb76a5fb',1,'DynamicIIRFilter']]],
-  ['dynamiciirfilterreader',['DynamicIIRFilterReader',['../classDynamicIIRFilterReader.html#a7673a39d5554dd81ed0f3102b1a04046',1,'DynamicIIRFilterReader']]]
+  ['dynamiciirfilterreader',['DynamicIIRFilterReader',['../classDynamicIIRFilterReader.html#a7673a39d5554dd81ed0f3102b1a04046',1,'DynamicIIRFilterReader']]],
+  ['dynamicmusic',['DynamicMusic',['../classDynamicMusic.html#a7c2a63fa2f7f76b40171ca15c1a13f5d',1,'DynamicMusic']]]
 ];

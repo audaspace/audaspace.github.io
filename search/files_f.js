@@ -15,6 +15,8 @@ var searchData=
   ['sndfilereader_2eh',['SndFileReader.h',['../SndFileReader_8h.html',1,'']]],
   ['sndfilewriter_2eh',['SndFileWriter.h',['../SndFileWriter_8h.html',1,'']]],
   ['softwaredevice_2eh',['SoftwareDevice.h',['../SoftwareDevice_8h.html',1,'']]],
+  ['soundlist_2eh',['SoundList.h',['../SoundList_8h.html',1,'']]],
+  ['source_2eh',['Source.h',['../Source_8h.html',1,'']]],
   ['specification_2eh',['Specification.h',['../Specification_8h.html',1,'']]],
   ['specschanger_2eh',['SpecsChanger.h',['../SpecsChanger_8h.html',1,'']]],
   ['square_2eh',['Square.h',['../Square_8h.html',1,'']]],

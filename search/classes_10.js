@@ -16,6 +16,8 @@ var searchData=
   ['sndfilewriter',['SndFileWriter',['../classSndFileWriter.html',1,'']]],
   ['softwaredevice',['SoftwareDevice',['../classSoftwareDevice.html',1,'']]],
   ['softwarehandle',['SoftwareHandle',['../classSoftwareDevice_1_1SoftwareHandle.html',1,'SoftwareDevice']]],
+  ['soundlist',['SoundList',['../classSoundList.html',1,'']]],
+  ['source',['Source',['../classSource.html',1,'']]],
   ['specs',['Specs',['../structSpecs.html',1,'']]],
   ['specschanger',['SpecsChanger',['../classSpecsChanger.html',1,'']]],
   ['square',['Square',['../classSquare.html',1,'']]],

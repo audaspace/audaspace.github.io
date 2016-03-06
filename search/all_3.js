@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['default_5fn',['DEFAULT_N',['../FFTPlan_8h.html#a7b7cdc3e37897dd1b91b7eedc62b54c0',1,'FFTPlan.h']]],
   ['defaultsamplerate',['DefaultSampleRate',['../Specification_8h.html#a17379dce26833610bba016391ef06e3e',1,'Specification.h']]],
   ['defaultsynchronizer',['DefaultSynchronizer',['../classDefaultSynchronizer.html',1,'']]],
   ['defaultsynchronizer_2eh',['DefaultSynchronizer.h',['../DefaultSynchronizer_8h.html',1,'']]],
@@ -24,5 +25,7 @@ var searchData=
   ['dynamiciirfilter_2eh',['DynamicIIRFilter.h',['../DynamicIIRFilter_8h.html',1,'']]],
   ['dynamiciirfilterreader',['DynamicIIRFilterReader',['../classDynamicIIRFilterReader.html',1,'DynamicIIRFilterReader'],['../classDynamicIIRFilterReader.html#a7673a39d5554dd81ed0f3102b1a04046',1,'DynamicIIRFilterReader::DynamicIIRFilterReader()']]],
   ['dynamiciirfilterreader_2eh',['DynamicIIRFilterReader.h',['../DynamicIIRFilterReader_8h.html',1,'']]],
+  ['dynamicmusic',['DynamicMusic',['../classDynamicMusic.html',1,'DynamicMusic'],['../classDynamicMusic.html#a7c2a63fa2f7f76b40171ca15c1a13f5d',1,'DynamicMusic::DynamicMusic()']]],
+  ['dynamicmusic_2eh',['DynamicMusic.h',['../DynamicMusic_8h.html',1,'']]],
   ['demos_20and_20tutorials',['Demos and Tutorials',['../tutorials.html',1,'']]]
 ];

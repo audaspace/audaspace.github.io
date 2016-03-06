@@ -11,6 +11,7 @@ var searchData=
   ['iirfilter',['IIRFilter',['../classIIRFilter.html',1,'']]],
   ['iirfilterreader',['IIRFilterReader',['../classIIRFilterReader.html',1,'']]],
   ['ilockable',['ILockable',['../classILockable.html',1,'']]],
+  ['impulseresponse',['ImpulseResponse',['../classImpulseResponse.html',1,'']]],
   ['ireader',['IReader',['../classIReader.html',1,'']]],
   ['isound',['ISound',['../classISound.html',1,'']]],
   ['isynchronizer',['ISynchronizer',['../classISynchronizer.html',1,'']]],

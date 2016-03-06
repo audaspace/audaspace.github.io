@@ -9,5 +9,6 @@ var searchData=
   ['double',['Double',['../classDouble.html',1,'']]],
   ['doublereader',['DoubleReader',['../classDoubleReader.html',1,'']]],
   ['dynamiciirfilter',['DynamicIIRFilter',['../classDynamicIIRFilter.html',1,'']]],
-  ['dynamiciirfilterreader',['DynamicIIRFilterReader',['../classDynamicIIRFilterReader.html',1,'']]]
+  ['dynamiciirfilterreader',['DynamicIIRFilterReader',['../classDynamicIIRFilterReader.html',1,'']]],
+  ['dynamicmusic',['DynamicMusic',['../classDynamicMusic.html',1,'']]]
 ];
