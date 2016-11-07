@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data_5ft',['data_t',['../Audaspace_8h.html#ae91c9d70e1e2c8b657e51de1fff60ada',1,'Audaspace.h']]],
   ['default_5fn',['DEFAULT_N',['../FFTPlan_8h.html#a7b7cdc3e37897dd1b91b7eedc62b54c0',1,'FFTPlan.h']]],
   ['defaultsamplerate',['DefaultSampleRate',['../Specification_8h.html#a17379dce26833610bba016391ef06e3e',1,'Specification.h']]],
   ['defaultsynchronizer',['DefaultSynchronizer',['../classDefaultSynchronizer.html',1,'']]],

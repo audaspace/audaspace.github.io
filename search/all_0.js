@@ -26,6 +26,8 @@ var searchData=
   ['aud_5fexport_5fapi',['AUD_EXPORT_API',['../Audaspace_8h.html#aed3a1d14eda6bb7cdc4b7cd846aeb152',1,'Audaspace.h']]],
   ['aud_5fformat_5fsize',['AUD_FORMAT_SIZE',['../Specification_8h.html#a17c8872c3fda8e3bc57c968ffb4b745e',1,'Specification.h']]],
   ['aud_5flocal',['AUD_LOCAL',['../Audaspace_8h.html#acd0b288d4edf8e15c0221b416faa79c6',1,'Audaspace.h']]],
+  ['aud_5fnamespace_5fbegin',['AUD_NAMESPACE_BEGIN',['../Audaspace_8h.html#acd7584504197a1397aaf57af797e1813',1,'Audaspace.h']]],
+  ['aud_5fnamespace_5fend',['AUD_NAMESPACE_END',['../Audaspace_8h.html#a4cf7088a9bb0256563f28fd13c80b066',1,'Audaspace.h']]],
   ['aud_5fnoexcept',['AUD_NOEXCEPT',['../Exception_8h.html#a3a4ff5e1a5656b18b9d99bc2fc1c6b63',1,'Exception.h']]],
   ['aud_5fplugin_5fapi',['AUD_PLUGIN_API',['../Audaspace_8h.html#ae80c5c0f6ce55934dfa1823d908fa25f',1,'Audaspace.h']]],
   ['aud_5fsample_5fsize',['AUD_SAMPLE_SIZE',['../Specification_8h.html#a0702bdd4ca569f32a4f0c5a1db96b054',1,'Specification.h']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['length',['length',['../classVector3.html#a30db3d517cb422cb78a4be0cf52bc89e',1,'Vector3']]],
+  ['length',['length',['../classVector3.html#ac1293fb40332f7e0bc5a0dc88e1c33fa',1,'Vector3']]],
   ['limiter',['Limiter',['../classLimiter.html',1,'Limiter'],['../classLimiter.html#ae94d2bff9eab0db542c59c5b2625c815',1,'Limiter::Limiter()']]],
   ['limiter_2eh',['Limiter.h',['../Limiter_8h.html',1,'']]],
   ['limiterreader',['LimiterReader',['../classLimiterReader.html',1,'LimiterReader'],['../classLimiterReader.html#a173663c424dce85ff6dde8ca84bd82f7',1,'LimiterReader::LimiterReader()']]],
@@ -14,6 +14,7 @@ var searchData=
   ['loadplugins',['loadPlugins',['../classPluginManager.html#a7f039374823ff758c27c497c07add0a1',1,'PluginManager']]],
   ['loadrighthrtfs',['loadRightHRTFs',['../classHRTFLoader.html#a6dc7e275fea11dba843c2cc4d0ebd18a',1,'HRTFLoader::loadRightHRTFs(std::shared_ptr&lt; FFTPlan &gt; plan, const std::string &amp;fileExtension, const std::string &amp;path=&quot;&quot;)'],['../classHRTFLoader.html#a9f145e4b454cef94b8ad8a3412694ccd',1,'HRTFLoader::loadRightHRTFs(const std::string &amp;fileExtension, const std::string &amp;path=&quot;&quot;)']]],
   ['lock',['lock',['../classIDevice.html#a90208831c6108e7f155244a59c3731d6',1,'IDevice::lock()'],['../classNULLDevice.html#ad7c26a50fa9b29f8ac29c726f8dec9d9',1,'NULLDevice::lock()'],['../classSoftwareDevice.html#a899e79ea1a3db44d8f277bd4639318d1',1,'SoftwareDevice::lock()'],['../classSequenceData.html#a081d781a9f57c01da28b77841f98aa11',1,'SequenceData::lock()'],['../classSequenceEntry.html#a7ef27bc841dccac2833afaa3b1f15bca',1,'SequenceEntry::lock()'],['../classILockable.html#abeb599754f0ca2fbbf5d6e944e2be0c9',1,'ILockable::lock()'],['../classOpenALDevice.html#a654026d5cc5b7f9b5859512322a58646',1,'OpenALDevice::lock()']]],
+  ['lookuplibrary',['lookupLibrary',['../classPluginManager.html#aa6fd9644ff39ff0f14c8273ce58b4aa0',1,'PluginManager']]],
   ['loop',['Loop',['../classLoop.html',1,'Loop'],['../classLoop.html#ae60191e5b252620baaa9b24b06e5bc14',1,'Loop::Loop()']]],
   ['loop_2eh',['Loop.h',['../Loop_8h.html',1,'']]],
   ['loopreader',['LoopReader',['../classLoopReader.html',1,'LoopReader'],['../classLoopReader.html#ad92b7514689a0eba2333a816f2d66901',1,'LoopReader::LoopReader()']]],

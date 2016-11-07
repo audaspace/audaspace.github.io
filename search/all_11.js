@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sample_5ft',['sample_t',['../Audaspace_8h.html#aa0798f7ea0975b143a1d9deac8c05d43',1,'Audaspace.h']]],
   ['sampleformat',['SampleFormat',['../Specification_8h.html#ae39c36a097f22514400136509407dad2',1,'Specification.h']]],
   ['samplerate',['SampleRate',['../Specification_8h.html#a11249ca544d179e7fa61b2200a092407',1,'Specification.h']]],
   ['sampleratechanged',['sampleRateChanged',['../classBaseIIRFilterReader.html#abc6e8235a8ac90e9abd6a42102a65123',1,'BaseIIRFilterReader::sampleRateChanged()'],['../classDynamicIIRFilterReader.html#a93375b5b9c832add9a25cab41179ef94',1,'DynamicIIRFilterReader::sampleRateChanged()']]],

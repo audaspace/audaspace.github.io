@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mix',['mix',['../classSoftwareDevice.html#abba2ac65c0d885417583a3936725cf5b',1,'SoftwareDevice::mix()'],['../classMixer.html#aaa5407ff70b2f461f11d7b9063299217',1,'Mixer::mix()']]],
+  ['mix',['mix',['../classSoftwareDevice.html#abba2ac65c0d885417583a3936725cf5b',1,'SoftwareDevice::mix()'],['../classMixer.html#aaa5407ff70b2f461f11d7b9063299217',1,'Mixer::mix(sample_t *buffer, int start, int length, float volume)'],['../classMixer.html#a2671eddfb2d327361d3294355117babf',1,'Mixer::mix(sample_t *buffer, int start, int length, float volume_to, float volume_from)']]],
   ['mixer',['Mixer',['../classMixer.html#a3b6878dcf85f2a86ea94e7540ac1f384',1,'Mixer']]],
   ['move',['move',['../classSequenceEntry.html#a0e34ea5ff5bd21f0db868737456e51a8',1,'SequenceEntry']]],
   ['mutablereader',['MutableReader',['../classMutableReader.html#a3eeaa50ed78885870114e2bfa3bb7c25',1,'MutableReader']]],

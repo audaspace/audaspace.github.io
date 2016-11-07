@@ -20,6 +20,7 @@ var searchData=
   ['m_5fmapper',['m_mapper',['../classSoftwareDevice_1_1SoftwareHandle.html#a5e1696164b82b24080273fcc93a7ec2d',1,'SoftwareDevice::SoftwareHandle']]],
   ['m_5fmessage',['m_message',['../classException.html#a492fd40f8daf552af168dde3c41a9143',1,'Exception']]],
   ['m_5fmixer',['m_mixer',['../classSoftwareDevice.html#a1a06ff591bd611073d0c826c1d0ab2ee',1,'SoftwareDevice']]],
+  ['m_5fold_5fvolume',['m_old_volume',['../classSoftwareDevice_1_1SoftwareHandle.html#a23df10e40441202f72cf29f3572db62f',1,'SoftwareDevice::SoftwareHandle']]],
   ['m_5forientation',['m_orientation',['../classSoftwareDevice_1_1SoftwareHandle.html#a6499bba7d6ed4d275b6782043d7a70e7',1,'SoftwareDevice::SoftwareHandle']]],
   ['m_5fpitch',['m_pitch',['../classSoftwareDevice_1_1SoftwareHandle.html#a2ce387a60f37ea0eb2cf7910a92251b1',1,'SoftwareDevice::SoftwareHandle']]],
   ['m_5fquality',['m_quality',['../classSoftwareDevice.html#a6a7c5217dd4a4f5c3f7e26f798a5d3e5',1,'SoftwareDevice']]],
