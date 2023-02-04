@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nulldevice',['NULLDevice',['../classNULLDevice.html',1,'']]]
+  ['nulldevice_0',['NULLDevice',['../classNULLDevice.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plugins',['Plugins',['../group__plugin.html',1,'']]]
+  ['plugins_0',['Plugins',['../group__plugin.html',1,'']]]
 ];

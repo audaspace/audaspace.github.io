@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effects',['Effects',['../group__fx.html',1,'']]]
+  ['effects_0',['Effects',['../group__fx.html',1,'']]]
 ];
