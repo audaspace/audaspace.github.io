@@ -3,7 +3,7 @@ var searchData=
   ['accumulator_0',['Accumulator',['../classAccumulator.html#a683b8e025dee9022d6ed92360ba7689f',1,'Accumulator']]],
   ['accumulatorfilter_1',['accumulatorFilter',['../classAccumulator.html#a1fcab5e201eaf6a39abefee41016c9ae',1,'Accumulator']]],
   ['accumulatorfilteradditive_2',['accumulatorFilterAdditive',['../classAccumulator.html#a5339b2684f79d96e016be1ac6b90adbc',1,'Accumulator']]],
-  ['add_3',['add',['../classSequence.html#acd478acd8617ca90039fa084b9a9695b',1,'Sequence::add()'],['../classSequenceData.html#ac54461c1fb787d9ac92ad88a490b4b03',1,'SequenceData::add()']]],
+  ['add_3',['add',['../classSequence.html#acd478acd8617ca90039fa084b9a9695b',1,'Sequence::add()'],['../classSequenceData.html#a5de887b26b59fd726f772ad75f61b845',1,'SequenceData::add()']]],
   ['addcategory_4',['addCategory',['../classPlaybackManager.html#afa0ccbefdefe2da95bd324f7015e8642',1,'PlaybackManager::addCategory(std::shared_ptr&lt; PlaybackCategory &gt; category)'],['../classPlaybackManager.html#a3aca5f80ec259a903dd804e42e51b271',1,'PlaybackManager::addCategory(float volume)']]],
   ['addimpulseresponse_5',['addImpulseResponse',['../classHRTF.html#a421c0926eb2d9041203cc31c58f6efce',1,'HRTF']]],
   ['addscene_6',['addScene',['../classDynamicMusic.html#add159532486693e366f165129b3fdd07',1,'DynamicMusic']]],

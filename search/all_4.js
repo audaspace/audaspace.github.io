@@ -14,6 +14,7 @@ var searchData=
   ['envelopefilter_11',['envelopeFilter',['../classEnvelope.html#a94a2f889e2f3e2ad32b07fb0ad92dc40',1,'Envelope']]],
   ['equalizer_12',['Equalizer',['../classEqualizer.html',1,'Equalizer'],['../classEqualizer.html#a640d8e3a86335fdce0bbab31aabe4903',1,'Equalizer::Equalizer()']]],
   ['equalizer_2eh_13',['Equalizer.h',['../Equalizer_8h.html',1,'']]],
-  ['exception_14',['Exception',['../classException.html#afeb97c421adf460c70903ec07b12fcdc',1,'Exception::Exception(const Exception &amp;exception)'],['../classException.html#a4ea0d287d4a966ab9361d8a9f9542231',1,'Exception::Exception(std::string message, std::string file, int line)'],['../classException.html',1,'Exception']]],
-  ['exception_2eh_15',['Exception.h',['../Exception_8h.html',1,'']]]
+  ['exception_14',['Exception',['../classException.html',1,'Exception'],['../classException.html#afeb97c421adf460c70903ec07b12fcdc',1,'Exception::Exception(const Exception &amp;exception)'],['../classException.html#ad5f21f86baeab6652500b36264be8703',1,'Exception::Exception(const std::string &amp;message, const std::string &amp;file, int line)']]],
+  ['exception_2eh_15',['Exception.h',['../Exception_8h.html',1,'']]],
+  ['exceptions_16',['RAII and Exceptions',['../tutorials.html#autotoc_md23',1,'']]]
 ];

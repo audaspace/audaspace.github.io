@@ -8,5 +8,5 @@ var searchData=
   ['envelope_5',['Envelope',['../classEnvelope.html#aa24673b108ac30e51d0a5fc542de78ae',1,'Envelope']]],
   ['envelopefilter_6',['envelopeFilter',['../classEnvelope.html#a94a2f889e2f3e2ad32b07fb0ad92dc40',1,'Envelope']]],
   ['equalizer_7',['Equalizer',['../classEqualizer.html#a640d8e3a86335fdce0bbab31aabe4903',1,'Equalizer']]],
-  ['exception_8',['Exception',['../classException.html#afeb97c421adf460c70903ec07b12fcdc',1,'Exception::Exception(const Exception &amp;exception)'],['../classException.html#a4ea0d287d4a966ab9361d8a9f9542231',1,'Exception::Exception(std::string message, std::string file, int line)']]]
+  ['exception_8',['Exception',['../classException.html#afeb97c421adf460c70903ec07b12fcdc',1,'Exception::Exception(const Exception &amp;exception)'],['../classException.html#ad5f21f86baeab6652500b36264be8703',1,'Exception::Exception(const std::string &amp;message, const std::string &amp;file, int line)']]]
 ];
