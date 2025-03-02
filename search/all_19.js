@@ -22,12 +22,13 @@ var searchData=
   ['_7ejackdevice_19',['~JackDevice',['../classJackDevice.html#af1e11b2e1d94796fd2f9087af6e8e288',1,'JackDevice']]],
   ['_7emixer_20',['~Mixer',['../classMixer.html#af8db94e968ba1a3e03ffe9e377e0d6e9',1,'Mixer']]],
   ['_7emodulatorreader_21',['~ModulatorReader',['../classModulatorReader.html#a6aa7191080f3765b8a11e6755f68cffc',1,'ModulatorReader']]],
-  ['_7epulseaudiodevice_22',['~PulseAudioDevice',['../classPulseAudioDevice.html#a9131000eb8145bcdd9d8289608612c29',1,'PulseAudioDevice']]],
-  ['_7ereaddevice_23',['~ReadDevice',['../classReadDevice.html#ad7858f49a31c88246c085c2021353ba5',1,'ReadDevice']]],
-  ['_7esdldevice_24',['~SDLDevice',['../classSDLDevice.html#ad7b7a32ea3ffdcda0e90d8f9d45ef240',1,'SDLDevice']]],
-  ['_7esequencereader_25',['~SequenceReader',['../classSequenceReader.html#ae6c01023a16978a6447b1a7685989c8f',1,'SequenceReader']]],
-  ['_7esndfilereader_26',['~SndFileReader',['../classSndFileReader.html#a0d815d42d4e5971e819ef856ce70b890',1,'SndFileReader']]],
-  ['_7esndfilewriter_27',['~SndFileWriter',['../classSndFileWriter.html#acb96822f0d4f239afa9612b829b74aff',1,'SndFileWriter']]],
-  ['_7esuperposereader_28',['~SuperposeReader',['../classSuperposeReader.html#ab193bae42ebc27cdcba3aa00565bd2e8',1,'SuperposeReader']]],
-  ['_7ewasapidevice_29',['~WASAPIDevice',['../classWASAPIDevice.html#adeeb0c92e82e25bcb41d91332cce3cef',1,'WASAPIDevice']]]
+  ['_7epipewiredevice_22',['~PipeWireDevice',['../classPipeWireDevice.html#a1d99d17b921e38b857dac4ab478fcf4a',1,'PipeWireDevice']]],
+  ['_7epulseaudiodevice_23',['~PulseAudioDevice',['../classPulseAudioDevice.html#a9131000eb8145bcdd9d8289608612c29',1,'PulseAudioDevice']]],
+  ['_7ereaddevice_24',['~ReadDevice',['../classReadDevice.html#ad7858f49a31c88246c085c2021353ba5',1,'ReadDevice']]],
+  ['_7esdldevice_25',['~SDLDevice',['../classSDLDevice.html#ad7b7a32ea3ffdcda0e90d8f9d45ef240',1,'SDLDevice']]],
+  ['_7esequencereader_26',['~SequenceReader',['../classSequenceReader.html#ae6c01023a16978a6447b1a7685989c8f',1,'SequenceReader']]],
+  ['_7esndfilereader_27',['~SndFileReader',['../classSndFileReader.html#a0d815d42d4e5971e819ef856ce70b890',1,'SndFileReader']]],
+  ['_7esndfilewriter_28',['~SndFileWriter',['../classSndFileWriter.html#acb96822f0d4f239afa9612b829b74aff',1,'SndFileWriter']]],
+  ['_7esuperposereader_29',['~SuperposeReader',['../classSuperposeReader.html#ab193bae42ebc27cdcba3aa00565bd2e8',1,'SuperposeReader']]],
+  ['_7ewasapidevice_30',['~WASAPIDevice',['../classWASAPIDevice.html#adeeb0c92e82e25bcb41d91332cce3cef',1,'WASAPIDevice']]]
 ];

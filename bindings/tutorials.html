@@ -1,133 +1,171 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Tutorials &#8212; audaspace 1.3.0 documentation</title>
-    
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.3.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tutorials &#8212; audaspace 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=72d88caf"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="audaspace 1.3.0 documentation" href="index.html" />
     <link rel="next" title="Device" href="device.html" />
     <link rel="prev" title="Welcome to audaspace’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">
+  
+  
+
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="tutorials">
-<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>The C and Python binding for audaspace were designed with simplicity in mind. This means however that to use the full capabilities of audaspace, there is no way around the C++ library.</p>
-</div>
-<div class="section" id="simple-demo">
-<h2>Simple Demo<a class="headerlink" href="#simple-demo" title="Permalink to this headline">¶</a></h2>
-<p>The <strong>simple.py</strong> example program contains all the basic building blocks for an application using audaspace. These building blocks are basically the classes <a class="reference internal" href="device.html#aud.Device" title="aud.Device"><code class="xref py py-class docutils literal"><span class="pre">aud.Device</span></code></a>, <a class="reference internal" href="sound.html#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">aud.Sound</span></code></a> and <a class="reference internal" href="handle.html#aud.Handle" title="aud.Handle"><code class="xref py py-class docutils literal"><span class="pre">aud.Handle</span></code></a>.</p>
-<p>We start with importing <a class="reference internal" href="index.html#module-aud" title="aud"><code class="xref py py-mod docutils literal"><span class="pre">aud</span></code></a> and <code class="xref py py-mod docutils literal"><span class="pre">time</span></code> as the modules we need for our simple example.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
-<span class="kn">import</span> <span class="nn">aud</span><span class="o">,</span> <span class="nn">time</span>
+  <section id="tutorials">
+<h1>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>The C and Python binding for audaspace were designed with simplicity in mind.
+This means however that to use the full capabilities of audaspace,
+there is no way around the C++ library.</p>
+</section>
+<section id="simple-demo">
+<h2>Simple Demo<a class="headerlink" href="#simple-demo" title="Link to this heading">¶</a></h2>
+<p>The <strong>simple.py</strong> example program contains all the basic
+building blocks for an application using audaspace.
+These building blocks are basically the classes <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Device</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Sound</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Handle</span></code>.</p>
+<p>We start with importing <a class="reference internal" href="index.html#module-aud" title="aud"><code class="xref py py-mod docutils literal notranslate"><span class="pre">aud</span></code></a> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">time</span></code>
+as the modules we need for our simple example.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">aud</span><span class="o">,</span><span class="w"> </span><span class="nn">time</span>
 </pre></div>
 </div>
-<p>The first step now is to open an output device and this can simply be done by allocating a <a class="reference internal" href="device.html#aud.Device" title="aud.Device"><code class="xref py py-class docutils literal"><span class="pre">aud.Device</span></code></a> object.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Device</span><span class="p">()</span>
+<p>The first step now is to open an output device and this
+can simply be done by allocating a <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Device</span></code> object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Device</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>To create a sound we can choose to load one from a <a class="reference internal" href="sound.html#aud.Sound.file" title="aud.Sound.file"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.file()</span></code></a>, or we use one of our signal generators. We decide to do the latter and create a <a class="reference internal" href="sound.html#aud.Sound.sine" title="aud.Sound.sine"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.sine()</span></code></a> signal with a frequency of 440 Hz.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">sine</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">sine</span><span class="p">(</span><span class="mi">440</span><span class="p">)</span>
+<p>To create a sound we can choose to load one from a <a class="reference internal" href="sound.html#aud.Sound.file" title="aud.Sound.file"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.file()</span></code></a>,
+or we use one of our signal generators. We decide to do the latter
+and create a <a class="reference internal" href="sound.html#aud.Sound.sine" title="aud.Sound.sine"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.sine()</span></code></a> signal with a frequency of 440 Hz.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sine</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">sine</span><span class="p">(</span><span class="mi">440</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">At this point nothing is playing back yet, <a class="reference internal" href="sound.html#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">aud.Sound</span></code></a> objects are just descriptions of sounds.</p>
+<p class="admonition-title">Note</p>
+<p>At this point nothing is playing back yet,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Sound</span></code> objects are just descriptions of sounds.</p>
 </div>
-<p>However instead of a sine wave, we would like to have a square wave to produce a more retro gaming sound. We could of course use the <a class="reference internal" href="sound.html#aud.Sound.square" title="aud.Sound.square"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.square()</span></code></a> generator instead of sine, but we want to show how to apply effects, so we apply a <a class="reference internal" href="sound.html#aud.Sound.threshold" title="aud.Sound.threshold"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.threshold()</span></code></a> which makes a square wave out of our sine too, even if less efficient than directly generating the square wave.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">sine</span><span class="o">.</span><span class="n">threshold</span><span class="p">()</span>
+<p>However instead of a sine wave, we would like to have a square wave
+to produce a more retro gaming sound. We could of course use the
+<a class="reference internal" href="sound.html#aud.Sound.square" title="aud.Sound.square"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.square()</span></code></a> generator instead of sine,
+but we want to show how to apply effects,
+so we apply a <a class="reference internal" href="sound.html#aud.Sound.threshold" title="aud.Sound.threshold"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.threshold()</span></code></a>
+which makes a square wave out of our sine too,
+even if less efficient than directly generating the square wave.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">square</span> <span class="o">=</span> <span class="n">sine</span><span class="o">.</span><span class="n">threshold</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="sound.html#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">aud.Sound</span></code></a> class offers generator and effect functions.</p>
+<p class="admonition-title">Note</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Sound</span></code> class offers generator and effect functions.</p>
 </div>
-<p>The we can play our sound by calling the <a class="reference internal" href="device.html#aud.Device.play" title="aud.Device.play"><code class="xref py py-func docutils literal"><span class="pre">aud.Device.play()</span></code></a> method of our device. This method returns a <a class="reference internal" href="handle.html#aud.Handle" title="aud.Handle"><code class="xref py py-class docutils literal"><span class="pre">aud.Handle</span></code></a> which is used to control the playback of the sound.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+<p>The we can play our sound by calling the
+<a class="reference internal" href="device.html#aud.Device.play" title="aud.Device.play"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Device.play()</span></code></a> method of our device.
+This method returns a <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Handle</span></code>
+which is used to control the playback of the sound.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now if we do nothing else anymore the application will quit immediately, so we won&#8217;t hear much of our square wave, so we decide to wait for three seconds before quitting the application by calling <code class="xref py py-func docutils literal"><span class="pre">time.sleep()</span></code>.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<p>Now if we do nothing else anymore the application will quit immediately,
+so we won’t hear much of our square wave,
+so we decide to wait for three seconds before
+quitting the application by calling <code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="audioplayer">
-<h2>Audioplayer<a class="headerlink" href="#audioplayer" title="Permalink to this headline">¶</a></h2>
-<p>Now that we know the basics of audaspace, we can build our own music player easily by just slightly changing the previous program. The <strong>player.py</strong> example does exactly that, let&#8217;s have a short look at the differences:</p>
-<p>Instead of creating a sine signal and thresholding it, we in fact use the <a class="reference internal" href="sound.html#aud.Sound.file" title="aud.Sound.file"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.file()</span></code></a> function to load a sound from a file. The filename we pass is the first command line argument our application got.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</section>
+<section id="audioplayer">
+<h2>Audioplayer<a class="headerlink" href="#audioplayer" title="Link to this heading">¶</a></h2>
+<p>Now that we know the basics of audaspace,
+we can build our own music player easily
+by just slightly changing the previous program.
+The <strong>player.py</strong> example does exactly that,
+let’s have a short look at the differences:</p>
+<p>Instead of creating a sine signal and thresholding it,
+we in fact use the <a class="reference internal" href="sound.html#aud.Sound.file" title="aud.Sound.file"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.file()</span></code></a> function to load a sound from a file.
+The filename we pass is the first command line argument our application got.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>When the sound gets played back we now want to wait until the whole file has been played, so we use the <a class="reference internal" href="handle.html#aud.Handle.status" title="aud.Handle.status"><code class="xref py py-data docutils literal"><span class="pre">aud.Handle.status</span></code></a> property to determine whether the sound finished playing.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">handle</span><span class="o">.</span><span class="n">status</span><span class="p">:</span>
+<p>When the sound gets played back we now want to wait until
+the whole file has been played, so we use the <code class="xref py py-data docutils literal notranslate"><span class="pre">aud.Handle.status</span></code>
+property to determine whether the sound finished playing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">handle</span><span class="o">.</span><span class="n">status</span><span class="p">:</span>
      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We don&#8217;t make any error checks if the user actually added a command line argument. As an exercise you could extend this program to play any number of command line supplied files in sequence.</p>
-</div>
-<div class="section" id="siren">
-<h2>Siren<a class="headerlink" href="#siren" title="Permalink to this headline">¶</a></h2>
-<p>Let&#8217;s get a little bit more complex. The <strong>siren.py</strong> example plays a generated siren sound that circles around your head. Depending on how many speakers you have and if the output device used supports the speaker setup, you will hear this effect. With stereo speakers you should at least hear some left-right-panning.</p>
-<p>We start off again with importing the modules we need and we also define some properties of our siren sound. We want it to consist of two sine sounds with different frequencies. We define a length for the sine sounds and how long a fade in/out should take. We also know already how to open a device.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
-<span class="kn">import</span> <span class="nn">aud</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">time</span>
+<p>We don’t make any error checks if the user actually added a command
+line argument. As an exercise you could extend this program to play
+any number of command line supplied files in sequence.</p>
+</section>
+<section id="siren">
+<h2>Siren<a class="headerlink" href="#siren" title="Link to this heading">¶</a></h2>
+<p>Let’s get a little bit more complex. The <strong>siren.py</strong> example
+plays a generated siren sound that circles around your head.
+Depending on how many speakers you have and if the output
+device used supports the speaker setup, you will hear this effect.
+With stereo speakers you should at least hear some left-right-panning.</p>
+<p>We start off again with importing the modules we need and
+we also define some properties of our siren sound.
+We want it to consist of two sine sounds with different frequencies.
+We define a length for the sine sounds and how long a fade in/out should take.
+We also know already how to open a device.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">aud</span><span class="o">,</span><span class="w"> </span><span class="nn">math</span><span class="o">,</span><span class="w"> </span><span class="nn">time</span>
 <span class="n">length</span> <span class="o">=</span> <span class="mf">0.5</span>
 <span class="n">fadelength</span> <span class="o">=</span> <span class="mf">0.05</span>
 
 <span class="n">device</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Device</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The next thing to do is to define our sine waves and apply all the required effects. As each of the effect functions returns the corresponding sound, we can easily chain those calls together.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">high</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">sine</span><span class="p">(</span><span class="mi">880</span><span class="p">)</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span><span class="o">.</span><span class="n">fadein</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span><span class="o">.</span><span class="n">fadeout</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="n">fadelength</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+<p>The next thing to do is to define our sine waves and apply all the required effects.
+As each of the effect functions returns the corresponding sound,
+we can easily chain those calls together.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">high</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">sine</span><span class="p">(</span><span class="mi">880</span><span class="p">)</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span><span class="o">.</span><span class="n">fadein</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span><span class="o">.</span><span class="n">fadeout</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="n">fadelength</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
 <span class="n">low</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">sine</span><span class="p">(</span><span class="mi">700</span><span class="p">)</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span><span class="o">.</span><span class="n">fadein</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span><span class="o">.</span><span class="n">fadeout</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="n">fadelength</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span><span class="o">.</span><span class="n">volume</span><span class="p">(</span><span class="mf">0.6</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The next step is to connect the two sines, which we do using the <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.join()</span></code></a> function.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">high</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">low</span><span class="p">)</span>
+<p>The next step is to connect the two sines,
+which we do using the <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.join()</span></code></a> function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">high</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">low</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The generated siren sound can now be played back and what we also do is to loop it. Therefore we set the <a class="reference internal" href="handle.html#aud.Handle.loop_count" title="aud.Handle.loop_count"><code class="xref py py-data docutils literal"><span class="pre">aud.Handle.loop_count</span></code></a> to a negative value to loop forever.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">sound</span><span class="p">)</span>
+<p>The generated siren sound can now be played back and what we also do is to loop it.
+Therefore we set the <code class="xref py py-data docutils literal notranslate"><span class="pre">aud.Handle.loop_count</span></code> to a negative value to loop forever.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">sound</span><span class="p">)</span>
 <span class="n">handle</span><span class="o">.</span><span class="n">loop_count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>Now we use some timing code to make sure our demo runs for 10 seconds, but we also use the time to update the location of our playing sound, with the <a class="reference internal" href="handle.html#aud.Handle.location" title="aud.Handle.location"><code class="xref py py-data docutils literal"><span class="pre">aud.Handle.location</span></code></a> property, which is a three dimensional vector. The trigonometic calculation based on the running time of the program keeps the sound on the XZ plane letting it follow a circle around us.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<p>Now we use some timing code to make sure our demo runs for 10 seconds,
+but we also use the time to update the location of our playing sound,
+with the <code class="xref py py-data docutils literal notranslate"><span class="pre">aud.Handle.location</span></code> property, which is a three dimensional vector.
+The trigonometic calculation based on the running time of the program keeps
+the sound on the XZ plane letting it follow a circle around us.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 
 <span class="k">while</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
      <span class="n">angle</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
@@ -135,98 +173,142 @@
      <span class="n">handle</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle</span><span class="p">)]</span>
 </pre></div>
 </div>
-<p>As an exercise you could try to let the sound come from the far left and go to the far right and a little bit in front of you within the 10 second runtime of the program. With this change you should be able to hear the volume of the sound change, depending on how far it is away from you. Updating the <a class="reference internal" href="handle.html#aud.Handle.velocity" title="aud.Handle.velocity"><code class="xref py py-data docutils literal"><span class="pre">aud.Handle.velocity</span></code></a> property properly also enables the doppler effect. Compare your solution to the <strong>siren2.py</strong> demo.</p>
-</div>
-<div class="section" id="tetris">
-<h2>Tetris<a class="headerlink" href="#tetris" title="Permalink to this headline">¶</a></h2>
-<p>The <strong>tetris.py</strong> demo application shows an even more complex application which generates retro tetris music. Looking at the source code there should be nothing new here, again the functions used from audaspace are the same as in the previous examples. In the <code class="xref py py-func docutils literal"><span class="pre">parseNote()</span></code> function all single notes get joined which leads to a very long chain of sounds. If you think of <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.join()</span></code></a> as a function that creates a binary tree with the two joined sounds as leaves then the <code class="xref py py-func docutils literal"><span class="pre">parseNote()</span></code> function creates a very unbalanced tree.</p>
-<p>Insted we could rewrite the code to use two other classes: <a class="reference internal" href="sequence.html#aud.Sequence" title="aud.Sequence"><code class="xref py py-class docutils literal"><span class="pre">aud.Sequence</span></code></a> and <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><code class="xref py py-class docutils literal"><span class="pre">aud.SequenceEntry</span></code></a> to sequence the notes. The <strong>tetris2.py</strong> application does exactly that. Before the while loop we add a variable that stores the current position in the score and create a new <a class="reference internal" href="sequence.html#aud.Sequence" title="aud.Sequence"><code class="xref py py-class docutils literal"><span class="pre">aud.Sequence</span></code></a> object.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>
+<p>As an exercise you could try to let the sound come from the far left
+and go to the far right and a little bit in front of you within the
+10 second runtime of the program. With this change you should be able
+to hear the volume of the sound change, depending on how far it is away from you.
+Updating the <code class="xref py py-data docutils literal notranslate"><span class="pre">aud.Handle.velocity</span></code> property properly also enables the doppler effect.
+Compare your solution to the <strong>siren2.py</strong> demo.</p>
+</section>
+<section id="tetris">
+<h2>Tetris<a class="headerlink" href="#tetris" title="Link to this heading">¶</a></h2>
+<p>The <strong>tetris.py</strong> demo application shows an even more
+complex application which generates retro tetris music.
+Looking at the source code there should be nothing new here,
+again the functions used from audaspace are the same as in the previous examples.
+In the <code class="xref py py-func docutils literal notranslate"><span class="pre">parseNote()</span></code> function all single notes get joined which leads
+to a very long chain of sounds. If you think of <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.join()</span></code></a>
+as a function that creates a binary tree with the two joined sounds as
+leaves then the <code class="xref py py-func docutils literal notranslate"><span class="pre">parseNote()</span></code> function creates a very unbalanced tree.</p>
+<p>Insted we could rewrite the code to use two other classes:
+<code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Sequence</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.SequenceEntry</span></code> to sequence the notes.
+The <strong>tetris2.py</strong> application does exactly that.
+Before the while loop we add a variable that stores the current position
+in the score and create a new <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.Sequence</span></code> object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">sequence</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sequence</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Then in the loop we can create the note simply by chaining the <a class="reference internal" href="sound.html#aud.Sound.square" title="aud.Sound.square"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.square()</span></code></a> generator and <a class="reference internal" href="sound.html#aud.Sound.fadein" title="aud.Sound.fadein"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.fadein()</span></code></a> and <a class="reference internal" href="sound.html#aud.Sound.fadeout" title="aud.Sound.fadeout"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.fadeout()</span></code></a> effects.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">rate</span><span class="p">)</span><span class="o">.</span><span class="n">fadein</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span><span class="o">.</span><span class="n">fadeout</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="n">fadelength</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span>
+<p>Then in the loop we can create the note simply by chaining the
+<a class="reference internal" href="sound.html#aud.Sound.square" title="aud.Sound.square"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.square()</span></code></a> generator and <a class="reference internal" href="sound.html#aud.Sound.fadein" title="aud.Sound.fadein"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.fadein()</span></code></a>
+and <a class="reference internal" href="sound.html#aud.Sound.fadeout" title="aud.Sound.fadeout"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.fadeout()</span></code></a> effects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">=</span> <span class="n">aud</span><span class="o">.</span><span class="n">Sound</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">rate</span><span class="p">)</span><span class="o">.</span><span class="n">fadein</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span><span class="o">.</span><span class="n">fadeout</span><span class="p">(</span><span class="n">length</span> <span class="o">-</span> <span class="n">fadelength</span><span class="p">,</span> <span class="n">fadelength</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now instead of using <a class="reference internal" href="sound.html#aud.Sound.limit" title="aud.Sound.limit"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.limit()</span></code></a> and <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal"><span class="pre">aud.Sound.join()</span></code></a> we simply add the sound to the sequence.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">entry</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">note</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">position</span> <span class="o">+</span> <span class="n">length</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<p>Now instead of using <a class="reference internal" href="sound.html#aud.Sound.limit" title="aud.Sound.limit"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.limit()</span></code></a> and <a class="reference internal" href="sound.html#aud.Sound.join" title="aud.Sound.join"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sound.join()</span></code></a>
+we simply add the sound to the sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">entry</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">note</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">position</span> <span class="o">+</span> <span class="n">length</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The entry returned from the <a class="reference internal" href="sequence.html#aud.Sequence.add" title="aud.Sequence.add"><code class="xref py py-func docutils literal"><span class="pre">aud.Sequence.add()</span></code></a> function is an object of the <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><code class="xref py py-class docutils literal"><span class="pre">aud.SequenceEntry</span></code></a> class. We can use this entry to mute the note in case it&#8217;s actually a pause.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
-     <span class="n">entry</span><span class="o">.</span><span class="n">muted</span> <span class="o">=</span> <span class="bp">True</span>
+<p>The entry returned from the <a class="reference internal" href="sequence.html#aud.Sequence.add" title="aud.Sequence.add"><code class="xref py py-func docutils literal notranslate"><span class="pre">aud.Sequence.add()</span></code></a>
+function is an object of the <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.SequenceEntry</span></code> class.
+We can use this entry to mute the note in case it’s actually a pause.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+     <span class="n">entry</span><span class="o">.</span><span class="n">muted</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 <p>Lastly we have to update our position variable.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">position</span> <span class="o">+=</span> <span class="n">length</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">position</span> <span class="o">+=</span> <span class="n">length</span>
 </pre></div>
 </div>
-<p>Now in <strong>tetris2.py</strong> we used the <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry.muted" title="aud.SequenceEntry.muted"><code class="xref py py-data docutils literal"><span class="pre">aud.SequenceEntry.muted</span></code></a> property to show how the <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><code class="xref py py-class docutils literal"><span class="pre">aud.SequenceEntry</span></code></a> class can be used, but it would actually be smarter to not even create a note for pauses and just skip them. You can try to implement this as an exercise and then check out the solution in <strong>tetris3.py</strong>.</p>
-</div>
-<div class="section" id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>We introduced all five currently available classes in the audaspace Python API. Of course all classes offer a lot more functions than have been used in these demo applications, check out the specific class documentation for more details.</p>
-</div>
-</div>
+<p>Now in <strong>tetris2.py</strong> we used the <code class="xref py py-data docutils literal notranslate"><span class="pre">aud.SequenceEntry.muted</span></code>
+property to show how the <code class="xref py py-class docutils literal notranslate"><span class="pre">aud.SequenceEntry</span></code> class can be used,
+but it would actually be smarter to not even create a note for pauses and just skip them.
+You can try to implement this as an exercise and then check out the solution in <strong>tetris3.py</strong>.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">¶</a></h2>
+<p>We introduced all five currently available classes in the audaspace Python API.
+Of course all classes offer a lot more functions than have been used in these demo applications,
+check out the specific class documentation for more details.</p>
+</section>
+</section>
 
 
           </div>
+          
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Tutorials</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#simple-demo">Simple Demo</a></li>
-<li><a class="reference internal" href="#audioplayer">Audioplayer</a></li>
-<li><a class="reference internal" href="#siren">Siren</a></li>
-<li><a class="reference internal" href="#tetris">Tetris</a></li>
-<li><a class="reference internal" href="#conclusion">Conclusion</a></li>
+<h1 class="logo"><a href="index.html">audaspace</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-demo">Simple Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audioplayer">Audioplayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#siren">Siren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tetris">Tetris</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
 </ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="device.html">Device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handle.html">Handle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sequence.html">Sequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sequence_entry.html">Sequence Entry</a></li>
+</ul>
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to audaspace&#8217;s documentation!</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to audaspace’s documentation!</a></li>
       <li>Next: <a href="device.html" title="next chapter">Device</a></li>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/tutorials.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2009-2015, Jörg Müller.
+      &#169;2009-2015, Jörg Müller.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.1</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
-      <a href="_sources/tutorials.txt"
+      <a href="_sources/tutorials.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

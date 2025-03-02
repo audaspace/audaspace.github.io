@@ -1,7 +1,7 @@
 var searchData=
 [
   ['the_20code_0',['Getting the Code',['../setup.html#autotoc_md5',1,'']]],
-  ['the_20library_1',['The library',['../setup.html#autotoc_md11',1,'Using the library'],['../setup.html#autotoc_md16',1,'Using the library']]],
+  ['the_20library_1',['the library',['../setup.html#autotoc_md11',1,'Using the library'],['../setup.html#autotoc_md16',1,'Using the library']]],
   ['threadeddevice_2',['ThreadedDevice',['../classThreadedDevice.html',1,'ThreadedDevice'],['../classThreadedDevice.html#ab7af027945593d25c008f50d19e63f78',1,'ThreadedDevice::ThreadedDevice()']]],
   ['threadeddevice_2eh_3',['ThreadedDevice.h',['../ThreadedDevice_8h.html',1,'']]],
   ['threadpool_4',['ThreadPool',['../classThreadPool.html',1,'ThreadPool'],['../classThreadPool.html#a66412ad3d3b4f5b8b4d5156a7737091a',1,'ThreadPool::ThreadPool()']]],

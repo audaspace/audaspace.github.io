@@ -1,7 +1,7 @@
 var searchData=
 [
   ['length_0',['length',['../classVector3.html#ac1293fb40332f7e0bc5a0dc88e1c33fa',1,'Vector3']]],
-  ['library_1',['Library',['../setup.html#autotoc_md11',1,'Using the library'],['../setup.html#autotoc_md16',1,'Using the library']]],
+  ['library_1',['library',['../setup.html#autotoc_md11',1,'Using the library'],['../setup.html#autotoc_md16',1,'Using the library']]],
   ['library_20concepts_2',['Library Concepts',['../index.html#autotoc_md1',1,'']]],
   ['license_3',['License',['../index.html#autotoc_md3',1,'']]],
   ['limiter_4',['Limiter',['../classLimiter.html',1,'Limiter'],['../classLimiter.html#a131b5e3e8c2e0957947fda7724df3d6d',1,'Limiter::Limiter()']]],

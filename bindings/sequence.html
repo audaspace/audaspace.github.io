@@ -1,157 +1,198 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Sequence &#8212; audaspace 1.3.0 documentation</title>
-    
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.3.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sequence &#8212; audaspace 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=72d88caf"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="audaspace 1.3.0 documentation" href="index.html" />
     <link rel="next" title="Sequence Entry" href="sequence_entry.html" />
     <link rel="prev" title="Handle" href="handle.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">
+  
+  
+
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="sequence">
-<h1>Sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="aud.Sequence">
-<em class="property">class </em><code class="descclassname">aud.</code><code class="descname">Sequence</code><a class="headerlink" href="#aud.Sequence" title="Permalink to this definition">¶</a></dt>
-<dd><p>This sound represents sequenced entries to play a sound scene.</p>
-<dl class="method">
-<dt id="aud.Sequence.add">
-<code class="descname">add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.add" title="Permalink to this definition">¶</a></dt>
-<dd><p>Adds a new entry to the scene.
-:arg sound: The sound this entry should play.
-:type sound: <a class="reference internal" href="sound.html#aud.Sound" title="aud.Sound"><code class="xref py py-class docutils literal"><span class="pre">Sound</span></code></a>
-:arg begin: The start time.
-:type begin: float
-:arg end: The end time or a negative value if determined by the sound.
-:type end: float
-:arg skip: How much seconds should be skipped at the beginning.
-:type skip: float
-:return: The entry added.
-:rtype: <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><code class="xref py py-class docutils literal"><span class="pre">SequenceEntry</span></code></a></p>
+  <section id="sequence">
+<h1>Sequence<a class="headerlink" href="#sequence" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aud.</span></span><span class="sig-name descname"><span class="pre">Sequence</span></span></dt>
+<dd><p>This sound represents sequenced entries to play a sound sequence.</p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="aud.Sequence.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.add" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Adds a new entry to the sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sound</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code>) – The sound this entry should play.</p></li>
+<li><p><strong>begin</strong> (<em>double</em>) – The start time.</p></li>
+<li><p><strong>end</strong> (<em>double</em>) – The end time or a negative value if determined by the sound.</p></li>
+<li><p><strong>skip</strong> (<em>double</em>) – How much seconds should be skipped at the beginning.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The entry added.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SequenceEntry</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.channels">
-<code class="descname">channels</code><a class="headerlink" href="#aud.Sequence.channels" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">channels</span></span></dt>
 <dd><p>The channel count of the sequence.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.distance_model">
-<code class="descname">distance_model</code><a class="headerlink" href="#aud.Sequence.distance_model" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">distance_model</span></span></dt>
 <dd><p>The distance model of the sequence.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last"><a class="reference external" href="http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.htm#_Toc199835864">http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.htm#_Toc199835864</a></p>
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://www.openal.org/documentation/">OpenAL Documentation</a></p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.doppler_factor">
-<code class="descname">doppler_factor</code><a class="headerlink" href="#aud.Sequence.doppler_factor" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">doppler_factor</span></span></dt>
 <dd><p>The doppler factor of the sequence.
 This factor is a scaling factor for the velocity vectors in doppler calculation. So a value bigger than 1 will exaggerate the effect as it raises the velocity.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.fps">
-<code class="descname">fps</code><a class="headerlink" href="#aud.Sequence.fps" title="Permalink to this definition">¶</a></dt>
-<dd><p>The listeners&#8217;s location in 3D space, a 3D tuple of floats.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fps</span></span></dt>
+<dd><p>The listeners’s location in 3D space, a 3D tuple of floats.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.muted">
-<code class="descname">muted</code><a class="headerlink" href="#aud.Sequence.muted" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">muted</span></span></dt>
 <dd><p>Whether the whole sequence is muted.</p>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.rate">
-<code class="descname">rate</code><a class="headerlink" href="#aud.Sequence.rate" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">rate</span></span></dt>
 <dd><p>The sampling rate of the sequence in Hz.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="aud.Sequence.remove">
-<code class="descname">remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.remove" title="Permalink to this definition">¶</a></dt>
-<dd><p>reomve()</p>
-<p>Adds a new entry to the scene.
-:arg entry: The entry to remove.
-:type entry: <a class="reference internal" href="sequence_entry.html#aud.SequenceEntry" title="aud.SequenceEntry"><code class="xref py py-class docutils literal"><span class="pre">SequenceEntry</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="aud.Sequence.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.remove" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Removes an entry from the sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entry</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SequenceEntry</span></code>) – The entry to remove.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="aud.Sequence.setAnimationData">
-<code class="descname">setAnimationData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.setAnimationData" title="Permalink to this definition">¶</a></dt>
-<dd><p>Writes animation data to a sequence.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type</strong> (<em>int</em>) &#8211; The type of animation data.</li>
-<li><strong>frame</strong> (<em>int</em>) &#8211; The frame this data is for.</li>
-<li><strong>data</strong> (<em>sequence of float</em>) &#8211; The data to write.</li>
-<li><strong>animated</strong> (<em>bool</em>) &#8211; Whether the attribute is animated.</li>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">setAnimationData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="aud.Sequence.setAnimationData">
+<span class="sig-name descname"><span class="pre">setAnimationData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sequence.setAnimationData" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Writes animation data to a sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> (<em>int</em>) – The type of animation data.</p></li>
+<li><p><strong>frame</strong> (<em>int</em>) – The frame this data is for.</p></li>
+<li><p><strong>data</strong> (<em>sequence</em><em> of </em><em>float</em>) – The data to write.</p></li>
+<li><p><strong>animated</strong> (<em>bool</em>) – Whether the attribute is animated.</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="aud.Sequence.speed_of_sound">
-<code class="descname">speed_of_sound</code><a class="headerlink" href="#aud.Sequence.speed_of_sound" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">speed_of_sound</span></span></dt>
 <dd><p>The speed of sound of the sequence.
 The speed of sound in air is typically 343.3 m/s.</p>
 </dd></dl>
 
 </dd></dl>
 
-</div>
+</section>
 
 
           </div>
+          
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">audaspace</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="device.html">Device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handle.html">Handle</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sequence_entry.html">Sequence Entry</a></li>
+</ul>
+
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
@@ -160,36 +201,27 @@ The speed of sound in air is typically 343.3 m/s.</p>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/sequence.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2009-2015, Jörg Müller.
+      &#169;2009-2015, Jörg Müller.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.1</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
-      <a href="_sources/sequence.txt"
+      <a href="_sources/sequence.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
