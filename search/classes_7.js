@@ -14,6 +14,5 @@ var searchData=
   ['impulseresponse_11',['ImpulseResponse',['../classImpulseResponse.html',1,'']]],
   ['ireader_12',['IReader',['../classIReader.html',1,'']]],
   ['isound_13',['ISound',['../classISound.html',1,'']]],
-  ['isynchronizer_14',['ISynchronizer',['../classISynchronizer.html',1,'']]],
-  ['iwriter_15',['IWriter',['../classIWriter.html',1,'']]]
+  ['iwriter_14',['IWriter',['../classIWriter.html',1,'']]]
 ];

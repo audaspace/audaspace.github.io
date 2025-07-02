@@ -14,6 +14,5 @@ var searchData=
   ['impulseresponse_2eh_11',['ImpulseResponse.h',['../ImpulseResponse_8h.html',1,'']]],
   ['ireader_2eh_12',['IReader.h',['../IReader_8h.html',1,'']]],
   ['isound_2eh_13',['ISound.h',['../ISound_8h.html',1,'']]],
-  ['isynchronizer_2eh_14',['ISynchronizer.h',['../ISynchronizer_8h.html',1,'']]],
-  ['iwriter_2eh_15',['IWriter.h',['../IWriter_8h.html',1,'']]]
+  ['iwriter_2eh_14',['IWriter.h',['../IWriter_8h.html',1,'']]]
 ];

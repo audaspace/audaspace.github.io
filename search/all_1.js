@@ -9,7 +9,7 @@ var searchData=
   ['binauralsound_6',['BinauralSound',['../classBinauralSound.html',1,'BinauralSound'],['../classBinauralSound.html#a9a79600cd93313b8e213de4bd4539dd1',1,'BinauralSound::BinauralSound(std::shared_ptr&lt; ISound &gt; sound, std::shared_ptr&lt; HRTF &gt; hrtfs, std::shared_ptr&lt; Source &gt; source, std::shared_ptr&lt; ThreadPool &gt; threadPool, std::shared_ptr&lt; FFTPlan &gt; plan)'],['../classBinauralSound.html#ab1932865e5935c6064a1c0268076a36a',1,'BinauralSound::BinauralSound(std::shared_ptr&lt; ISound &gt; sound, std::shared_ptr&lt; HRTF &gt; hrtfs, std::shared_ptr&lt; Source &gt; source, std::shared_ptr&lt; ThreadPool &gt; threadPool)']]],
   ['binauralsound_2eh_7',['BinauralSound.h',['../BinauralSound_8h.html',1,'']]],
   ['buffer_8',['Buffer',['../classBuffer.html',1,'Buffer'],['../classBuffer.html#aacddaa92c3c845c37fd82dc906c16a97',1,'Buffer::Buffer()']]],
-  ['buffer_20architecture_9',['%Buffer Architecture',['../tutorials.html#autotoc_md29',1,'']]],
+  ['buffer_20architecture_9',['Buffer Architecture',['../tutorials.html#autotoc_md29',1,'']]],
   ['buffer_2eh_10',['Buffer.h',['../Buffer_8h.html',1,'']]],
   ['bufferreader_11',['BufferReader',['../classBufferReader.html',1,'BufferReader'],['../classBufferReader.html#ae8fe741dee9d6ee717b000a215784a1d',1,'BufferReader::BufferReader()']]],
   ['bufferreader_2eh_12',['BufferReader.h',['../BufferReader_8h.html',1,'']]],

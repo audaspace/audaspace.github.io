@@ -22,7 +22,7 @@ var searchData=
   ['animateableproperty_19',['AnimateableProperty',['../classAnimateableProperty.html',1,'AnimateableProperty'],['../classAnimateableProperty.html#a03347f2f904ec20a297336de2ccbc595',1,'AnimateableProperty::AnimateableProperty(int count=1)'],['../classAnimateableProperty.html#aebbb904e26b2c86f1e06ca7c4cbadb05',1,'AnimateableProperty::AnimateableProperty(int count, float value)']]],
   ['animateableproperty_2eh_20',['AnimateableProperty.h',['../AnimateableProperty_8h.html',1,'']]],
   ['animateablepropertytype_21',['AnimateablePropertyType',['../AnimateableProperty_8h.html#a88fcbc9d6d48a9832cc327f0b39cbec9',1,'AnimateableProperty.h']]],
-  ['architecture_22',['%Buffer Architecture',['../tutorials.html#autotoc_md29',1,'']]],
+  ['architecture_22',['Buffer Architecture',['../tutorials.html#autotoc_md29',1,'']]],
   ['assuresize_23',['assureSize',['../classBuffer.html#ad3370ebe3f491e9a77854188e30bb186',1,'Buffer::assureSize()'],['../classRingBuffer.html#aac33564d06f2e3e3680d4a783b45c62f',1,'RingBuffer::assureSize()']]],
   ['aud_5fapi_24',['AUD_API',['../Audaspace_8h.html#ad9080e3b9907fa3d0f5df561c65aa098',1,'Audaspace.h']]],
   ['aud_5fchannel_5fbit_25',['AUD_CHANNEL_BIT',['../Specification_8h.html#a6a9703ec4d11ebf83cd9f3794f84bdbe',1,'Specification.h']]],

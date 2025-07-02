@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tutorials_0',['Demos and Tutorials',['../tutorials.html',1,'']]]
+  ['exceptions_0',['RAII and Exceptions',['../tutorials.html#autotoc_md23',1,'']]]
 ];

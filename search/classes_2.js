@@ -8,6 +8,5 @@ var searchData=
   ['convolver_5',['Convolver',['../classConvolver.html',1,'']]],
   ['convolverreader_6',['ConvolverReader',['../classConvolverReader.html',1,'']]],
   ['convolversound_7',['ConvolverSound',['../classConvolverSound.html',1,'']]],
-  ['coreaudiodevice_8',['CoreAudioDevice',['../classCoreAudioDevice.html',1,'']]],
-  ['coreaudiosynchronizer_9',['CoreAudioSynchronizer',['../classCoreAudioSynchronizer.html',1,'']]]
+  ['coreaudiodevice_8',['CoreAudioDevice',['../classCoreAudioDevice.html',1,'']]]
 ];
