@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sound &#8212; audaspace 1.7.0 documentation</title>
+    <title>Sound &#8212; audaspace 1.8.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <script src="_static/documentation_options.js?v=030dc6f6"></script>
+    <script src="_static/documentation_options.js?v=b51e6972"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -112,6 +112,34 @@ but positive ones with a factor of two.</p>
 <p class="admonition-title">Note</p>
 <p>You can only add a sound to a sound list.</p>
 </div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">animateableTimeStretchPitchScale</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="aud.Sound.animateableTimeStretchPitchScale">
+<span class="sig-name descname"><span class="pre">animateableTimeStretchPitchScale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fps</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">time_stretch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pitch_scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quality</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_formant</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.animateableTimeStretchPitchScale" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Applies time-stretching and pitch-scaling to the sound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fps</strong> (<em>float</em>) – The FPS of the animation system.</p></li>
+<li><p><strong>time_stretch</strong> (float or <code class="xref py py-class docutils literal notranslate"><span class="pre">AnimateablePropertyP</span></code>) – The factor by which to stretch or compress time.</p></li>
+<li><p><strong>pitch_scale</strong> (float or <code class="xref py py-class docutils literal notranslate"><span class="pre">AnimateablePropertyP</span></code>
+:arg quality: Rubberband stretcher quality (STRETCHER_QUALITY_*).) – The factor by which to adjust the pitch.</p></li>
+<li><p><strong>preserve_formant</strong> (<em>bool</em>) – Whether to preserve the vocal formants during pitch-shifting.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created <code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -792,7 +820,7 @@ you’ll likely hear skips/jumps/cracks.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>frequency</strong> (<em>float</em>) – The frequency of the sawtooth wave in Hz.</p></li>
 <li><p><strong>rate</strong> (<em>int</em>) – The sampling rate in Hz. It’s recommended to set this
-value to the playback device’s samling rate to avoid resamping.</p></li>
+value to the playback device’s sampling rate to avoid resampling.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -816,7 +844,7 @@ value to the playback device’s samling rate to avoid resamping.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>rate</strong> (<em>int</em>) – The sampling rate in Hz. It’s recommended to set this
-value to the playback device’s samling rate to avoid resamping.</p>
+value to the playback device’s sampling rate to avoid resampling.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The created <code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code> object.</p>
@@ -841,7 +869,7 @@ value to the playback device’s samling rate to avoid resamping.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>frequency</strong> (<em>float</em>) – The frequency of the sine wave in Hz.</p></li>
 <li><p><strong>rate</strong> (<em>int</em>) – The sampling rate in Hz. It’s recommended to set this
-value to the playback device’s samling rate to avoid resamping.</p></li>
+value to the playback device’s sampling rate to avoid resampling.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -873,7 +901,7 @@ value to the playback device’s samling rate to avoid resamping.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>frequency</strong> (<em>float</em>) – The frequency of the square wave in Hz.</p></li>
 <li><p><strong>rate</strong> (<em>int</em>) – The sampling rate in Hz. It’s recommended to set this
-value to the playback device’s samling rate to avoid resamping.</p></li>
+value to the playback device’s sampling rate to avoid resampling.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -931,6 +959,33 @@ non-zero.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">timeStretchPitchScale</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="aud.Sound.timeStretchPitchScale">
+<span class="sig-name descname"><span class="pre">timeStretchPitchScale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_stretch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pitch_scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quality</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_formant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#aud.Sound.timeStretchPitchScale" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Applies time-stretching and pitch-scaling to the sound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time_stretch</strong> (<em>float</em>) – The factor by which to stretch or compress time.</p></li>
+<li><p><strong>pitch_scale</strong> (<em>float</em>) – The factor by which to adjust the pitch.</p></li>
+<li><p><strong>quality</strong> (<em>int</em>) – Rubberband stretcher quality (STRETCHER_QUALITY_*).</p></li>
+<li><p><strong>preserve_formant</strong> (<em>bool</em>) – Whether to preserve the vocal formants during pitch-shifting.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created <code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Sound</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
 <em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">triangle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><dl class="py method">
 <dt class="sig sig-object py" id="aud.Sound.triangle">
@@ -943,7 +998,7 @@ non-zero.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>frequency</strong> (<em>float</em>) – The frequency of the triangle wave in Hz.</p></li>
 <li><p><strong>rate</strong> (<em>int</em>) – The sampling rate in Hz. It’s recommended to set this
-value to the playback device’s samling rate to avoid resamping.</p></li>
+value to the playback device’s sampling rate to avoid resampling.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>

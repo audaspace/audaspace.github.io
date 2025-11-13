@@ -13,7 +13,7 @@ var searchData=
   ['aud_5fnoexcept_10',['AUD_NOEXCEPT',['../Exception_8h.html#a3a4ff5e1a5656b18b9d99bc2fc1c6b63',1,'Exception.h']]],
   ['aud_5fplugin_5fapi_11',['AUD_PLUGIN_API',['../Audaspace_8h.html#ae80c5c0f6ce55934dfa1823d908fa25f',1,'Audaspace.h']]],
   ['aud_5fsample_5fsize_12',['AUD_SAMPLE_SIZE',['../Specification_8h.html#a0702bdd4ca569f32a4f0c5a1db96b054',1,'Specification.h']]],
-  ['aud_5fshared_5flibrary_13',['AUD_SHARED_LIBRARY',['../Audaspace_8h.html#ac3ba8ce1e20f13d0fea339185c095908',1,'AUD_SHARED_LIBRARY:&#160;Audaspace.h'],['../Audaspace_8h.html#ac3ba8ce1e20f13d0fea339185c095908',1,'AUD_SHARED_LIBRARY:&#160;Audaspace.h']]],
+  ['aud_5fshared_5flibrary_13',['AUD_SHARED_LIBRARY',['../Audaspace_8h.html#ac3ba8ce1e20f13d0fea339185c095908',1,'AUD_SHARED_LIBRARY:&#160;Audaspace.h'],['../Audaspace_8h.html#a9111c468afc21daf4c2cd6b949a23f3f',1,'AUD_SHARED_LIBRARY:&#160;Audaspace.h']]],
   ['aud_5fstatic_5flibrary_14',['AUD_STATIC_LIBRARY',['../Audaspace_8h.html#a15624ea22ae24d88f76ef73b1bfa1542',1,'Audaspace.h']]],
   ['aud_5fthrow_15',['AUD_THROW',['../Exception_8h.html#a8659527260f6d0fcdb3a5bca7adcb815',1,'Exception.h']]],
   ['aud_5fuse_5fapi_16',['AUD_USE_API',['../Audaspace_8h.html#ab64c325f0646994fd84783443bf145fd',1,'Audaspace.h']]]
